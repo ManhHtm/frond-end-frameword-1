@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 1330px;
+  margin: auto;
+}
+.item {
+  display: flex;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  /* justify-content: center; */
+}
+.item .right img {
+  width: 500px;
+}
+.item .left {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+.btn {
+  padding: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Sửa sản phẩm</h1>
+        <form action="" #edit="ngForm" (ngSubmit)="onEdit(edit.value)">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInputDisabled" name="name" [(ngModel)]="oldProject.name" >
+                <label for="floatingInputDisabled">Tên sản phẩm</label>
+            </div>
+    
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="floatingInputDisabled" name="price" [(ngModel)]="oldProject.price" >
+                <label for="floatingInputDisabled">Giá sản phẩm</label>
+            </div>
+    
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" name="des" id="floatingTextareaDisabled" [(ngModel)]="oldProject.des" ></textarea>
+                <label for="floatingTextareaDisabled">Mô tả</label>
+              </div>
+    
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInputDisabled" name="image"  [(ngModel)]="oldProject.image">
+                <label for="floatingInputDisabled">Ảnh sản phẩm</label>
+            </div>
+    
+            <div class="d-grid gap-2">
+                <input type="submit" class="btn btn-outline-secondary" value="Sửa sản phẩm">
+                
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Danh sách sản phẩm</h1>
+      <table >
+        <thead >
+          <tr class=" table-secondary">
+            <th>ID sản phẩm</th>
+            <th>Tên sản phẩm</th>
+            <th>Giá sản phẩm</th>
+            <th>Mô tả </th>
+            <th>Ảnh sản phẩm</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+       
+        <tbody>
+          @for(p of list; track p.name){
+            <tr>
+              <th>{{p.id}}</th>
+              <td>{{p.name}}</td>
+              <td>{{p.price}}</td>
+              <td>{{p.des}}</td>
+              <td class="image"><img src={{p.image}} alt=""></td>
+              <td><button class="btn btn-outline-success" [routerLink]="['/edit',p.id]">Sửa</button><button  class="btn btn-outline-danger" (click)="onDelete(p.id)">Xóa</button></td>
+            </tr>
+          }
+        </tbody>
+      </table>
+      <!-- <div class="add">
+        <button  class="btn btn-outline-success" >Thêm sản phẩm</button>
+      </div> -->
+    </div>
+  </body>
+</html>

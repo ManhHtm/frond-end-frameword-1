@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <h2>Assignment Fpoly</h2>
+          <ul>
+            <li><a routerLink=""></a></li>
+            <li><a routerLink="/das">Danh sách sản phẩm</a></li>
+            <li><a routerLink="/add">Quản lý sản phẩm</a></li>
+            <li><a routerLink="/task">Thêm sản phẩm</a></li>
+            <li><a routerLink="/login">Đăng nhập</a></li>
+            <!-- <li><a href=""></a></li> -->
+          </ul>
+        </nav>
+        <!-- ô tìm kiếm -->
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <input
+            type="submit"
+            class="btn btn-outline-danger"
+            value="Tìm kiếm"
+          />
+        </form>
+      </header>
+      <!--  -->
+      <main><router-outlet /></main>
+    </div>
+  </body>
+</html>
